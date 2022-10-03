@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" integrity="sha512-HHsOC+h3najWR7OKiGZtfhFIEzg5VRIPde0kB0bG2QRidTQqf+sbfcxCTB16AcFB93xMjnBIKE29/MjdzXE+qw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+    
+        <header>
+            <div class="header-section">
+                <h1>Jimmy's Diner</h1>
+                <p>The best burgers and pizzas in town</p>
+            </div>
+        </header>
+
+        <!-- Main section -->
+
+        <main class="main-content">
+
+            <!-- Menu items -->
+            <div id="menu-list"></div>
+            <!-- End of menu items -->
+
+            <!-- Order section -->
+            <div class="order-container"id="order">
+                <h3>Your order</h3>
+                <div id="ordered-items"></div>
+                <div class="total-price-section" id="total-prices">
+                    <h4>Total Price:</h4>
+                    <p id="total-price">$0</p>
+                </div>
+                <button id="completedOrderBtn">Complete order</button>
+            </div>
+
+            <!-- End of order section -->
+
+            <!-- Payment modal -->
+            <div class="modal-container show" id="modal">
+                <h1>Enter card details</h1>
+                <form action="" id="form">
+                    <label for="name">Name</label>
+                    <input type="text" 
+                        name="name" 
+                        id="name" 
+                        placeholder="Enter your name" 
+                        required>
+                    <label for="card">Card</label>
+                    <input type="text" 
+                        name="card" 
+                        id="card" 
+                        placeholder="Enter your card number" 
+                        required>
+                    <input type="text" 
+                        name="cardcvv" 
+                        id="cardcvv" 
+                        placeholder="Enter CVV" 
+                        required>
+                    <button id="payBtn">Pay</button>
+                </form>
+            </div>
+            <!-- End of payment modal -->
+
+        </main>
+        
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

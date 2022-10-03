@@ -1,0 +1,210 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Smythe', cursive;
+} 
+
+
+header {
+    background-color: rgb(73, 71, 71);
+    background-image: url("/images/burger-header.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    color: white;
+    padding: 2rem 3rem;
+}
+.header-section {
+    max-width: 400px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+}
+header h1 {
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 24px;
+}
+header p {
+    margin-top: 5px;
+}
+
+/* hide label */
+label {
+    position: absolute;
+    left: 50000;
+}
+
+main {
+    position: relative;
+    max-width: 600px;
+    padding: 0 3rem;
+    margin: 3rem auto;
+}
+.food-item {
+    font-family: 'Smythe';
+    font-style: normal;
+    font-size: 1.4rem;
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 25% 45% 25%;
+    gap: .1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: 2px solid #d3d0d0;
+}
+.food-img {
+    font-size: 120px;
+    padding-right: 2rem;
+}
+.food-item .food-type {
+    margin-top: 0;
+}
+.food-item .ingredients {
+    display: inline-block;
+    margin-right: 1rem;
+}
+.order-container {
+    width: 100%;
+    font-size: 1.5rem;
+}
+.order-container h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+.add-order-icon {
+   justify-self: end;
+   cursor: pointer;
+}
+
+#ordered-items {
+    border-bottom: 3px solid #3f3d3d;
+}
+.item-container {
+    display: grid;
+    grid-template-columns: 10% 85% 5%;
+    padding-bottom: 3rem;
+    font-family: 'Smythe';
+    font-size: 2rem;
+    font-style: normal;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.item-title,
+.remove-item,
+.item-price {
+    align-self: center;
+    padding-bottom: 0;
+}
+.item-price {
+    align-self: end;
+    margin-right: 0;
+}
+.remove-item {
+    padding-left: 2rem;
+    font-size: 1.1rem;
+    color: #d3d0d0;
+    cursor: pointer;
+}
+.item-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+
+.total-price-section {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.total-price-section p {
+    justify-self: end;
+}
+button {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+    background: #16DB99;
+    border: none;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.show {
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 3.88991px;
+    color: #111;
+    top: 100;
+    bottom: 50;
+    left: 0;
+    right: 0;
+    filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+    color: white;
+}
+.show h1 {
+    font-family: 'Verdana';
+    padding: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #111;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+    grid-template-rows: repeat(4, 15%);
+}
+
+form input {
+    height: 50.3px;
+}
+input,
+input::placeholder {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    /* or 156% */
+    color: #757575;
+}
+form button {
+    margin-top: 0;
+}
+
+.modal-container {
+    display: none;
+}
+#purchase-complete {
+    text-transform: capitalize;
+    background: #ECFDF5;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 3px;
+}
