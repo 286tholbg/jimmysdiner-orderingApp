@@ -10,7 +10,7 @@ let formData = ''
 form.addEventListener('submit', function(e){
     e.preventDefault()
     formData = new FormData(form)
-    let completePurchaseHtml = `<h2 id="purchase-complete">${formData.get('name')}, for your purchase, your order is on it's way</h2>`
+    let completePurchaseHtml = `<h2 id="purchase-complete">Thank you for your purchase, ${formData.get('name')}, your order is on it's way</h2>`
     document.getElementById('order').innerHTML = completePurchaseHtml
     document.getElementById('modal').style.display = "none"
 })
